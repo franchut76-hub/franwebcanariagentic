@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<!-- CANVAS BACKGROUND NEURONAL EFFECT -->
+<canvas id="neural-canvas"></canvas>
+
 <!-- WHATSAPP FLOTANTE -->
 <a href="https://wa.me/34600000000" target="_blank" class="wa-float" title="Escríbeme por WhatsApp">💬</a>
 
@@ -19,7 +22,7 @@
       <div class="logo-icon">
         <video src="video-1776110286845.mp4" autoplay loop muted playsinline aria-hidden="true"></video>
       </div>
-      Canar<span>IA</span>gentic
+      <span>Canar<span style="color:var(--green);">IA</span>gentic</span>
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="Menú">
       <span></span><span></span><span></span>
@@ -66,13 +69,34 @@
           </div>
         </div>
         <div class="hero-stat">
-          <strong>+25</strong>
+          <strong class="count-up" data-target="25">+0</strong>
           <span>años de experiencia</span>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- SOCIAL PROOF POPUP -->
+  <div id="social-proof-popup" class="social-proof-widget hidden">
+    <div class="social-proof-content">
+      <div class="sp-icon">📍</div>
+      <div class="sp-text">
+        <strong id="sp-name">Alguien en Tenerife</strong>
+        <span id="sp-action">acaba de solicitar su diagnóstico gratuito</span>
+        <small id="sp-time">Hace 5 minutos</small>
+      </div>
+    </div>
+    <button class="sp-close" id="sp-close">&times;</button>
+  </div>
 </section>
+
+<!-- STICKY BOTTOM CTA -->
+<div class="sticky-bottom-cta">
+  <div class="sticky-content">
+    <span>¿Listo para recuperar tu tiempo?</span>
+    <button class="btn btn-primary" data-scroll="#diagnostico">Inicia tu Diagnóstico</button>
+  </div>
+</div>
 
 <!-- 2. CREDIBILIDAD -->
 <section class="section section-alt" id="como-funciona">
@@ -84,25 +108,74 @@
       </div>
       <p>Soy empresario antes que consultor. Durante 25 años gestioné negocios reales, tomé decisiones con recursos limitados y aprendí lo que ningún curso enseña: que la tecnología solo tiene valor si resuelve un problema concreto de tu negocio.<br><br>Hoy combino esa experiencia con formación técnica avanzada en Inteligencia Artificial para diseñar sistemas que realmente funcionan, adaptados a cómo trabaja tu equipo, no al revés.</p>
     </div>
-    <div class="cred-cols">
-      <div class="cred-card fade-up fade-up-d1">
-        <div class="cred-icon">🏢</div>
-        <h3>Experiencia empresarial real</h3>
-        <p>25 años gestionando pymes. Hablo tu idioma porque he estado donde estás tú.</p>
-      </div>
-      <div class="cred-card fade-up fade-up-d2">
-        <div class="cred-icon">🤖</div>
-        <h3>Capacidad técnica avanzada</h3>
-        <p>Implemento sistemas de IA con herramientas como CrewAI, LangGraph y Make, no automatizaciones básicas.</p>
-      </div>
-      <div class="cred-card fade-up fade-up-d3">
-        <div class="cred-icon">📍</div>
-        <h3>Referente local en Canarias</h3>
-        <p>Conozco el tejido empresarial canario. Estoy aquí, cerca de tu negocio, no gestionando tu proyecto desde la distancia.</p>
-      </div>
+    
+    <div class="testimonial-container">
+      <div class="testimonial-stack" id="testimonialStack">
+        
+        <!-- Tarjeta 1 (Fondo): Experiencia Empresarial -->
+        <a href="#como-funciona" class="t-card t-card-1" data-index="0">
+          <div class="t-header">
+            <div class="t-avatar"><img src="fotos/logo_icon.png" alt="CanarIAgentic"></div>
+            <div class="t-user-info">
+              <div class="t-username">Experiencia real <svg class="t-icon-verified" viewBox="0 0 22 22" fill="currentColor"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" /></svg></div>
+              <div class="t-handle">Empresario & Fundador</div>
+            </div>
+          </div>
+          <p class="t-content">25 años gestionando pymes. Hablo tu idioma porque he estado exactamente donde estás tú ahora mismo, tomando decisiones con recursos limitados.</p>
+          <div class="t-footer">
+            <span>Experiencia Real</span>
+            <div class="t-stats">
+              <div class="t-stat">🚀 +25 años</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tarjeta 2 (Media): Capacidad Técnica -->
+        <a href="#como-funciona" class="t-card t-card-2" data-index="1">
+          <div class="t-header">
+            <div class="t-avatar"><img src="fotos/logo_icon.png" alt="CanarIAgentic"></div>
+            <div class="t-user-info">
+              <div class="t-username">Capacidad técnica <svg class="t-icon-verified" viewBox="0 0 22 22" fill="currentColor"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" /></svg></div>
+              <div class="t-handle">Ingeniería de Agentes</div>
+            </div>
+          </div>
+          <p class="t-content">Implemento sistemas de Inteligencia Artificial avanzada con herramientas como CrewAI, LangGraph y Make. No simples automatizaciones, sino agentes que razonan.</p>
+          <div class="t-footer">
+            <span>Stack de Vanguardia</span>
+            <div class="t-stats">
+              <div class="t-stat">⚙️ Tech AI</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Tarjeta 3 (Frente): Referente Local -->
+        <a href="#como-funciona" class="t-card t-card-3" data-index="2">
+          <div class="t-header">
+            <div class="t-avatar"><img src="fotos/logo_icon.png" alt="CanarIAgentic"></div>
+            <div class="t-user-info">
+              <div class="t-username">Referente local <svg class="t-icon-verified" viewBox="0 0 22 22" fill="currentColor"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" /></svg></div>
+              <div class="t-handle">Presencia en Canarias</div>
+            </div>
+          </div>
+          <p class="t-content">Conozco el tejido empresarial canario. Estoy aquí, cerca de tu negocio, para asegurar que los sistemas de IA se adaptan a la realidad local de las islas.</p>
+          <div class="t-footer">
+            <span>Hecho en las Islas</span>
+            <div class="t-stats">
+              <div class="t-stat">📍 Tenerife/Canarias</div>
+            </div>
+          </div>
+        </a>
+
     </div>
+  </div>
+
     <div class="example-block fade-up">
-      <span class="tag2">💡 Un ejemplo real</span>
+      <div class="example-tag-wrapper">
+        <div class="logo-icon tag-icon-small">
+          <video src="video-1776110286845.mp4" autoplay loop muted playsinline aria-hidden="true"></video>
+        </div>
+        <span class="tag2">Un ejemplo real</span>
+      </div>
       <h3>Talleres mecánicos en Canarias</h3>
       <p>Un taller pierde de media entre 3 y 5 clientes potenciales cada semana porque nadie responde fuera del horario laboral. Implementé un sistema que atiende consultas las 24 horas, agenda citas automáticamente y avisa al equipo cada mañana con el resumen del día. Sin contratar a nadie. Sin cambiar cómo trabaja el taller.</p>
       <button class="btn btn-primary" data-scroll="#diagnostico">Haz el diagnóstico gratuito →</button>
@@ -120,43 +193,43 @@
     </div>
     <div class="sectors-grid">
       <div class="sector-card fade-up fade-up-d1">
-        <span class="sector-emoji">🔧</span>
+        <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
         <div class="sector-line"></div>
         <h3>Talleres y automoción</h3>
         <p>Pierdes clientes cada noche que nadie responde al teléfono.</p>
       </div>
       <div class="sector-card fade-up fade-up-d2">
-        <span class="sector-emoji">🏥</span>
+        <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
         <div class="sector-line"></div>
         <h3>Clínicas y centros de salud</h3>
         <p>Tu recepcionista no puede atender a todos a la vez.</p>
       </div>
       <div class="sector-card fade-up fade-up-d3">
-        <span class="sector-emoji">🏠</span>
+        <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
         <div class="sector-line"></div>
         <h3>Inmobiliarias</h3>
         <p>Los leads llegan a cualquier hora y el seguimiento se pierde.</p>
       </div>
       <div class="sector-card fade-up fade-up-d1">
-        <span class="sector-emoji">🏨</span>
+        <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
         <div class="sector-line"></div>
         <h3>Hoteles y alojamientos</h3>
         <p>Las consultas de reserva se acumulan sin respuesta rápida.</p>
       </div>
       <div class="sector-card fade-up fade-up-d2">
-        <span class="sector-emoji">🍽️</span>
+        <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
         <div class="sector-line"></div>
         <h3>Restaurantes y hostelería</h3>
         <p>Gestionar reservas y consultas te roba tiempo que necesitas en sala.</p>
       </div>
       <div class="sector-card fade-up fade-up-d3">
-        <span class="sector-emoji">🎓</span>
+        <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
         <div class="sector-line"></div>
         <h3>Academias y formación</h3>
         <p>Los interesados preguntan y si no respondes rápido, se van a la competencia.</p>
       </div>
       <div class="sector-card fade-up fade-up-d1">
-        <span class="sector-emoji">🛍️</span>
+        <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
         <div class="sector-line"></div>
         <h3>Comercio local</h3>
         <p>Tu tienda cierra, pero tus clientes potenciales siguen navegando.</p>
@@ -301,8 +374,8 @@
         <p>Basándonos en tus respuestas, hemos identificado al menos 3 áreas donde la IA puede trabajar por ti de forma inmediata: atención a clientes fuera de horario, seguimiento automático de consultas y reducción de tareas manuales repetitivas. Te enviamos el informe completo con recomendaciones específicas para tu sector a tu email.</p>
         <div class="result-form">
           <form id="resultForm">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu email" required>
+            <input type="text" id="r-nombre" placeholder="Tu nombre" required>
+            <input type="email" id="r-email" placeholder="Tu email" required>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">📩 Recibir mi informe personalizado</button>
           </form>
           <p class="result-note">También puedes <a href="#agenda" style="color:var(--green)">agendar directamente una llamada gratuita de 30 minutos</a> con Francisco para revisar los resultados juntos.</p>
@@ -376,10 +449,17 @@
         <p>Aunque no sigamos trabajando juntos, sales de la llamada con claridad sobre los próximos pasos.</p>
       </div>
     </div>
-    <div class="calendly-placeholder fade-up" id="contacto">
-      <strong>📅 Selecciona tu día y hora</strong>
-      <p>Aquí se integrará el widget de Calendly para agendar la llamada gratuita directamente.</p>
-      <p style="margin-top:12px;font-size:13px;">La llamada es por videollamada o teléfono, como prefieras.</p>
+    <div class="calendar-container fade-up" id="contacto">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px;">
+        <div class="logo-icon tag-icon-small" style="width: 28px; height: 28px; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 200, 150, 0.4);">
+          <video src="video-1776110286845.mp4" autoplay loop muted playsinline aria-hidden="true"></video>
+        </div>
+        <strong style="margin-bottom: 0; display: inline-block;">Conoce a tus próximos empleados virtuales</strong>
+      </div>
+      <p style="margin-bottom: 24px;">Selecciona el día y hora que mejor encaje en tu agenda. Serán 30 min sin compromiso para descubrir cómo la IA puede multiplicar el rendimiento de tu negocio.</p>
+      <div class="iframe-wrapper">
+        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3_d5E8sufj-kyIxuWqgvihJlAoSGX-f376KmaRbJLSjP9IyXvTDkdEP5REDZcUe-VSLauwCvH4?gv=true" style="border: 0; background: #ffffff;" width="100%" height="600" frameborder="0"></iframe>
+      </div>
     </div>
     <div class="appt-below fade-up">
       <p>¿Prefieres escribirme primero? Sin problema.</p>
@@ -397,7 +477,7 @@
           <div class="logo-icon">
             <video src="video-1776110286845.mp4" autoplay loop muted playsinline aria-hidden="true"></video>
           </div>
-          Canar<span>IA</span>gentic
+          <span>Canar<span style="color:var(--green);">IA</span>gentic</span>
         </div>
         <p class="footer-desc">CanarIAgentic — Consultoría de Inteligencia Artificial para pymes canarias. Sistemas que trabajan mientras tú descansas.</p>
         <a href="mailto:francisco@canariagentic.com" class="footer-email">francisco@canariagentic.com</a>
