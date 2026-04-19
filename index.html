@@ -401,14 +401,21 @@
           <li>Ejemplos reales de negocios en Canarias que ya han dado el paso, con resultados concretos.</li>
           <li>Por dónde empezar si nunca has usado IA en tu negocio, sin inversiones arriesgadas ni cambios bruscos.</li>
         </ul>
-        <div class="lm-form">
-          <form id="lmForm">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu email" required>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">📘 Quiero mi guía gratuita</button>
-            <p class="lm-fine">Sin spam. Solo contenido útil para tu negocio. Puedes darte de baja cuando quieras.</p>
-          </form>
-        </div>
+          <div class="lm-form">
+            <form id="lmForm">
+              <input type="text" id="lmNombre" placeholder="Tu nombre" required>
+              <input type="email" id="lmEmail" placeholder="Tu email" required>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">📘 Quiero mi guía gratuita</button>
+              <p class="lm-fine">Sin spam. Solo contenido útil para tu negocio. Puedes darte de baja cuando quieras.</p>
+            </form>
+            <div id="lmSuccess" style="display: none; background: rgba(0,200,150,0.1); border: 1px solid var(--green-main); padding: 16px; border-radius: 8px; margin-top: 16px; text-align: center;">
+                <p style="color: var(--white); font-weight: 600; margin-bottom: 8px;">¡Perfecto!</p>
+                <p style="color: var(--text-secondary); font-size: 14px;">Revisa tu bandeja de entrada en unos minutos. Te enviaremos la guía.</p>
+            </div>
+            <div id="lmError" style="display: none; background: rgba(255,100,100,0.1); border: 1px solid #ff6464; padding: 16px; border-radius: 8px; margin-top: 16px; text-align: center; color: #ff6464; font-size: 14px;">
+                Hubo un error al procesar tu solicitud. Por favor, inténtalo de nuevo.
+            </div>
+          </div>
         <p class="lm-alt">Si prefieres ir directo al grano, agenda una llamada gratuita de 30 minutos y lo analizamos juntos.</p>
         <button class="btn btn-outline" data-scroll="#agenda">📅 Agenda tu diagnóstico gratuito</button>
       </div>
@@ -434,17 +441,23 @@
     </div>
     <div class="appt-cols fade-up">
       <div class="appt-col">
-        <div class="appt-icon">📋</div>
+        <div class="appt-icon">
+          <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14h6"/><path d="M9 10h6"/><path d="M9 18h6"/></svg>
+        </div>
         <h3>Analizamos tu negocio</h3>
         <p>Me cuentas cómo funciona tu día a día y dónde sientes que pierdes más tiempo o clientes.</p>
       </div>
       <div class="appt-col">
-        <div class="appt-icon">🎯</div>
+        <div class="appt-icon">
+          <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
         <h3>Identificamos oportunidades reales</h3>
         <p>Te digo exactamente qué se puede automatizar en tu caso concreto y qué impacto puedes esperar.</p>
       </div>
       <div class="appt-col">
-        <div class="appt-icon">🗺️</div>
+        <div class="appt-icon">
+          <svg class="neon-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
         <h3>Te llevo un plan de acción</h3>
         <p>Aunque no sigamos trabajando juntos, sales de la llamada con claridad sobre los próximos pasos.</p>
       </div>
@@ -483,9 +496,20 @@
         <a href="mailto:francisco@canariagentic.com" class="footer-email">francisco@canariagentic.com</a>
       </div>
       <div class="footer-links">
-        <a href="#">Política de privacidad</a>
-        <a href="#">Aviso legal</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn →</a>
+        <a href="politica-privacidad.html">Política de privacidad</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="politica-cookies.html">Política de cookies</a>
+        <div style="display: flex; gap: 16px; margin: 4px 0;">
+          <a href="https://www.instagram.com/canariagentic/" target="_blank" aria-label="Instagram" style="display:flex; align-items:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61579694325128" target="_blank" aria-label="Facebook" style="display:flex; align-items:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" style="display:flex; align-items:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
         <a href="#agenda" class="btn btn-primary" style="margin-top:12px" data-scroll="#agenda">Agenda tu llamada</a>
       </div>
     </div>
@@ -496,6 +520,17 @@
     </div>
   </div>
 </footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookieConsent" class="cookie-consent fade-up hidden">
+  <div class="cookie-content">
+    <p>Utilizamos cookies de terceros requeridas para cargar nuestro calendario de citas y ofrecerte el mejor servicio. Si continúas navegando, consideramos que aceptas su uso.</p>
+    <div class="cookie-buttons">
+      <a href="politica-cookies.html" class="cookie-link">Ver Política de Cookies</a>
+      <button id="acceptCookies" class="btn btn-primary btn-sm">Aceptar</button>
+    </div>
+  </div>
+</div>
 
 <script src="app.js"></script>
 </body>

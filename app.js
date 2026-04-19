@@ -150,6 +150,7 @@ fadeEls.forEach(el => observer.observe(el));
 // ---- DIAGNÓSTICO ----
 (function() {
   const allSteps = Array.from(document.querySelectorAll('.step'));
+  if (allSteps.length === 0) return; // FIX: Prevenir error en páginas sin diagnóstico (aviso legal, privacidad)
   const progressFill = document.getElementById('progressFill');
   const progressLabel = document.getElementById('progressLabel');
   const diagSteps = document.getElementById('diagSteps');
@@ -420,4 +421,70 @@ if (popup && closePopup) {
   }, 12000); // Primera a los 12 seg de estar en la web
 }
 
+// COOKIES CONSENT
+document.addEventListener('DOMContentLoaded', () => {
+  const cookieConsent = document.getElementById('cookieConsent');
+  const acceptCookiesBtn = document.getElementById('acceptCookies');
+  
+  if (cookieConsent && !localStorage.getItem('cookiesAccepted')) {
+    setTimeout(() => {
+      cookieConsent.classList.remove('hidden');
+      // force reflow
+      void cookieConsent.offsetWidth;
+      cookieConsent.classList.add('show');
+    }, 2000);
+  }
 
+  if (acceptCookiesBtn) {
+    acceptCookiesBtn.addEventListener('click', () => {
+      localStorage.setItem('cookiesAccepted', 'true');
+      cookieConsent.classList.remove('show');
+      setTimeout(() => cookieConsent.classList.add('hidden'), 600);
+    });
+  }
+  
+  // ---- LEAD MAGNET (GUÍA GRATUITA) ----
+  const lmForm = document.getElementById('lmForm');
+  const lmSuccess = document.getElementById('lmSuccess');
+  const lmError = document.getElementById('lmError');
+
+  if (lmForm) {
+    lmForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = lmForm.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Enviando...';
+      btn.disabled = true;
+      lmError.style.display = 'none';
+
+      const nombre = document.getElementById('lmNombre').value;
+      const email = document.getElementById('lmEmail').value;
+
+      const payload = {
+        origen: 'guia_gratuita',
+        nombre: nombre,
+        email: email,
+        fecha: new Date().toISOString()
+      };
+
+      // Webhook de Relevance AI para la Guía Gratuita
+      const WEBHOOK_URL = 'https://api-d7b62b.stack.tryrelevance.com/latest/agents/hooks/custom-trigger/65a28496-8f7b-4199-a75f-76da08124d60/3345c9e6-66ea-4cf0-b3a1-2e4337f8add5';
+
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        lmForm.style.display = 'none';
+        lmSuccess.style.display = 'block';
+      } catch (error) {
+        console.error('Error enviando datos del Lead Magnet:', error);
+        lmError.style.display = 'block';
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
+    });
+  }
+});
