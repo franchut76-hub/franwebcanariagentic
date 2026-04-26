@@ -19,6 +19,9 @@ a{text-decoration:none;color:inherit;cursor:none;}
 button, .btn, .option {cursor:none;}
 img{max-width:100%;}
 
+/* Accessibility: Screen-reader only */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
 /* CUSTOM CURSOR */
 .custom-cursor {
   position: fixed;

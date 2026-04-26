@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /descargablecanariagentic.html
+
+Sitemap: https://www.canariagentic.com/sitemap.xml
