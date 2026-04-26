@@ -558,9 +558,8 @@ footer{background:#070f1e;border-top:1px solid var(--border);padding:64px 0 32px
   transform: translateY(0);
   opacity: 1;
 }
-.social-proof-widget.hidden {
-  display: none;
-}
+.social-proof-widget.hidden { display: none; }
+.hidden { display: none !important; }
 .social-proof-content {
   display: flex;
   align-items: center;
