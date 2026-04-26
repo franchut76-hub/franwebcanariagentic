@@ -453,6 +453,7 @@ nav a:hover{color:var(--white);}
 .lm-visual-badge{position:absolute;bottom:-20px;left:-20px;background:var(--navy-mid);border:1px solid var(--border);border-radius:12px;padding:16px 22px;}
 .lm-visual-badge strong{display:block;color:var(--green);font-size:22px;font-weight:800;}
 .lm-visual-badge span{color:var(--gray);font-size:12px;}
+.guide-cover-img{width:100%;max-width:420px;height:auto;display:block;object-fit:contain;}
 
 /* APPOINTMENT */
 .appt-header{text-align:center;max-width:700px;margin:0 auto 64px;}
