@@ -9,4 +9,4 @@ RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # 3. Redirect /calendario a la sección de reserva
-RewriteRule ^calendario$ index.html#contacto [NE,L,R=301]
+RewriteRule ^calendario/?$ https://www.canariagentic.com/#contacto [NE,L,R=301]
