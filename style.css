@@ -804,6 +804,7 @@ footer{background:#070f1e;border-top:1px solid var(--border);padding:64px 0 32px
 @media(max-width: 768px) {
   .services-grid { grid-template-columns: 1fr; max-width: 100%; }
   .process-step { grid-template-columns: 48px 2px 1fr; gap: 0 16px; }
+  .process-step-last { grid-template-columns: 48px 1fr; }
   .process-dot { width: 48px; height: 48px; }
   .process-connector { margin-top: 48px; }
   .process-content h3 { font-size: 18px; }
