@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Preguntas Frecuentes — CanarIAgentic</title>
+<link rel="stylesheet" href="style.css">
+<!-- Favicon -->
+<link rel="icon" type="image/webp" href="fotos/logo_icon_1.webp">
+<link rel="apple-touch-icon" href="fotos/logo_icon_1.webp">
+<style>
+  .legal-section {
+    padding: 150px 0 80px;
+    background-color: var(--bg-dark);
+  }
+  .legal-section h1 {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .faq-item {
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .faq-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inherit;
+  }
+  .faq-question::after {
+    content: '+';
+    font-size: 1.8rem;
+    color: var(--green);
+    transition: transform 0.3s ease;
+    line-height: 1;
+  }
+  .faq-item.active {
+    border-color: rgba(0, 200, 150, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  .faq-item.active .faq-question::after {
+    transform: rotate(45deg);
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1.5rem;
+  }
+  .faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 0 1.5rem 1.5rem;
+  }
+  .faq-answer p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- CANVAS BACKGROUND NEURONAL EFFECT -->
+<canvas id="neural-canvas"></canvas>
+
+<!-- HEADER -->
+<header id="header" style="background: rgba(10,14,23,0.9); border-bottom: 1px solid rgba(255,255,255,0.05);">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <video src="video-1776110286845.mp4" autoplay loop muted playsinline aria-hidden="true"></video>
+      </div>
+      <span>Canar<span style="color:var(--green);">IA</span>gentic</span>
+    </a>
+    <nav id="mainNav">
+      <a href="index.html">← Volver al inicio</a>
+    </nav>
+  </div>
+</header>
+
+<section class="legal-section">
+  <div class="faq-container">
+    <h1>Preguntas Frecuentes</h1>
+    
+    <div class="faq-item">
+      <button class="faq-question">¿Qué tipo de soluciones de Inteligencia Artificial ofrecen?</button>
+      <div class="faq-answer">
+        <p>Nos enfocamos en crear sistemas prácticos y rentables para tu empresa. Esto puede ir desde la automatización de tareas repetitivas (como la atención al cliente o la gestión de emails), hasta sistemas avanzados de análisis de datos o agentes virtuales que trabajan las 24 horas del día. No instalamos software por instalar; diseñamos soluciones que resuelven problemas reales de tu negocio.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Necesito conocimientos técnicos para usar vuestras herramientas?</button>
+      <div class="faq-answer">
+        <p>En absoluto. Nuestro objetivo es que la tecnología se adapte a ti y a tu equipo, no al revés. Desarrollamos herramientas intuitivas y fáciles de usar. Además, nos encargamos de todo el proceso técnico y te damos el soporte necesario para que puedas sacarles el máximo provecho desde el primer día.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Cuánto tiempo se tarda en implementar una solución?</button>
+      <div class="faq-answer">
+        <p>Depende de la complejidad del proyecto, pero nos caracterizamos por ser ágiles. Podemos implementar automatizaciones y agentes sencillos en cuestión de semanas (o incluso días). Para proyectos más complejos, trabajamos por fases, de modo que puedas empezar a ver resultados y retorno de inversión lo antes posible.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Es seguro el manejo de los datos de mi empresa?</button>
+      <div class="faq-answer">
+        <p>La privacidad y la seguridad son fundamentales. Construimos nuestros sistemas utilizando arquitecturas seguras y siguiendo las mejores prácticas en protección de datos. Nunca utilizamos tu información confidencial para entrenar modelos públicos de inteligencia artificial sin tu consentimiento.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Son muy costosos de mantener estos sistemas?</button>
+      <div class="faq-answer">
+        <p>No. Nuestro enfoque de venir "del barro de la empresa real" significa que entendemos la importancia de los costes. Buscamos soluciones que te ahorren dinero a largo plazo. Los costes de mantenimiento suelen ser mínimos y están basados únicamente en el uso real de las herramientas (como el consumo de servidores o APIs).</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Cuál es el proceso para empezar a trabajar con vosotros?</button>
+      <div class="faq-answer">
+        <p>El primer paso es una reunión inicial gratuita donde analizamos tu negocio, tus cuellos de botella y vemos si la IA realmente puede ayudarte. Si hay un buen encaje, te presentamos una propuesta sin compromiso. Una vez aceptada, empezamos a construir y adaptar el sistema a tus necesidades.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-icon">
+            <video src="video-1776110286845.mp4" autoplay loop muted playsinline aria-hidden="true"></video>
+          </div>
+          <span>Canar<span style="color:var(--green);">IA</span>gentic</span>
+        </div>
+        <p class="footer-desc">CanarIAgentic — Consultoría de Inteligencia Artificial para pymes canarias. Sistemas que trabajan mientras tú descansas.</p>
+        <a href="mailto:francisco@canariagentic.com" class="footer-email">francisco@canariagentic.com</a>
+      </div>
+      <div class="footer-links">
+        <a href="politica-privacidad.html">Política de privacidad</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="politica-cookies.html">Política de cookies</a>
+        <div style="display: flex; gap: 16px; margin: 4px 0;">
+          <a href="https://www.instagram.com/canariagentic/" target="_blank" aria-label="Instagram" style="display:flex; align-items:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61579694325128" target="_blank" aria-label="Facebook" style="display:flex; align-items:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/francisco-j-jorge-05318617b/" target="_blank" aria-label="LinkedIn" style="display:flex; align-items:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+        <a href="index.html#agenda" class="btn btn-primary" style="margin-top:12px">Agenda tu llamada</a>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <p>© 2026 CanarIAgentic · Todos los derechos reservados</p>
+      <p class="footer-made">🌋 Hecho en Canarias, para negocios canarios.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+  // FAQ Accordion Logic
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const currentItem = button.closest('.faq-item');
+      const isActive = currentItem.classList.contains('active');
+      
+      // Cierra todos
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Si no estaba activo, ábrelo
+      if (!isActive) {
+        currentItem.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
