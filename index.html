@@ -58,6 +58,28 @@
   ]
 }
 </script>
+<style>
+  /* RGPD Consent Checkbox */
+  .consent-block { margin: 12px 0 16px; }
+  .consent-label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+  .consent-label input[type="checkbox"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+    width: 17px;
+    height: 17px;
+    accent-color: var(--green);
+    cursor: pointer;
+  }
+  .consent-label span {
+    font-size: 0.82rem;
+    color: var(--gray);
+    line-height: 1.5;
+  }
+  .consent-label a { color: var(--green); text-decoration: underline; }
+  .consent-label input[type="checkbox"]:required:invalid + span::after {
+    content: '';
+  }
+</style>
 </head>
 <body>
 
@@ -582,6 +604,12 @@
             <input type="text" id="r-nombre" placeholder="Tu nombre" required>
             <label for="r-email" class="sr-only">Tu email</label>
             <input type="email" id="r-email" placeholder="Tu email" required>
+            <div class="consent-block">
+              <label class="consent-label">
+                <input type="checkbox" id="r-consent" required>
+                <span>He leído y acepto la <a href="politica-privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a>. Consiento el tratamiento de mis datos para recibir el informe personalizado y comunicaciones sobre los servicios de CanarIAgentic.</span>
+              </label>
+            </div>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">📩 Recibir mi informe personalizado</button>
           </form>
           <p class="result-note">También puedes <a href="#agenda" style="color:var(--green)">agendar directamente una llamada gratuita de 30 minutos</a> con Francisco para revisar los resultados juntos.</p>
@@ -613,6 +641,12 @@
               <input type="text" id="lmNombre" placeholder="Tu nombre" required>
               <label for="lmEmail" class="sr-only">Tu email</label>
               <input type="email" id="lmEmail" placeholder="Tu email" required>
+              <div class="consent-block">
+                <label class="consent-label">
+                  <input type="checkbox" id="lm-consent" required>
+                  <span>He leído y acepto la <a href="politica-privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a>. Consiento el tratamiento de mis datos para recibir la guía gratuita y comunicaciones sobre los servicios de CanarIAgentic.</span>
+                </label>
+              </div>
               <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">📘 Quiero mi guía gratuita</button>
               <p class="lm-fine">Sin spam. Solo contenido útil para tu negocio. Puedes darte de baja cuando quieras.</p>
             </form>
