@@ -3,3 +3,6 @@ Allow: /
 Disallow: /descargablecanariagentic.html
 
 Sitemap: https://www.canariagentic.com/sitemap.xml
+
+# LLMs / AI agents
+LLMs: https://www.canariagentic.com/llms.txt
