@@ -1,0 +1,219 @@
+# CanarIAgentic
+
+> Consultoría de Inteligencia Artificial para pymes de las Islas Canarias, fundada por Francisco de Jorge. Ayuda a negocios locales a implementar sistemas de IA que captan clientes, responden consultas y automatizan procesos repetitivos, sin necesidad de contratar personal adicional ni tener conocimientos técnicos.
+
+## Sobre el fundador
+
+Francisco de Jorge es el fundador y consultor principal de CanarIAgentic. Combina más de 25 años de experiencia gestionando negocios reales en las Islas Canarias — especialmente en el sector de la automoción — con formación técnica avanzada en Inteligencia Artificial aplicada.
+
+Su enfoque es radicalmente práctico: no instala software y desaparece, sino que acompaña a cada empresa desde el diagnóstico inicial hasta que el equipo es completamente autónomo con las herramientas implementadas. Entiende los problemas del negocio porque los ha vivido en primera persona durante décadas, lo que le permite identificar con precisión qué tareas tiene sentido automatizar y cuáles no.
+
+Notas importantes:
+- El servicio está enfocado exclusivamente en pymes de las Islas Canarias, España.
+- No se trata de consultoría teórica: todos los servicios parten del análisis real del negocio del cliente.
+- Los agentes IA se integran con las herramientas que el negocio ya usa (WhatsApp, correo, calendarios, CRMs). No requieren cambiar sistemas existentes.
+- Se ofrece una llamada de diagnóstico gratuita de 30 minutos sin compromiso.
+- Contacto directo: francisco@canariagentic.com | WhatsApp: +34 649 823 612
+
+---
+
+## Servicios
+
+### Diagnóstico IA para pymes
+URL: https://www.canariagentic.com/#servicios
+
+Análisis profundo del negocio para identificar tareas automatizables y entregar un mapa de impacto con ROI estimado. Incluye:
+- Entrevista de diagnóstico con el responsable del negocio
+- Inventario de tareas repetitivas con mayor coste de tiempo
+- Mapa de automatizaciones priorizadas por impacto económico real
+- Estimación de ahorro en horas/semana y equivalente salarial
+- Plan de acción con orden de implementación recomendado
+
+Es el punto de partida ideal antes de cualquier implementación. Permite tomar decisiones informadas sin invertir en tecnología a ciegas.
+
+---
+
+### Formación práctica en IA para equipos
+URL: https://www.canariagentic.com/#servicios
+
+Talleres presenciales o en remoto diseñados específicamente para el sector del cliente. El objetivo es que el equipo aprenda haciendo, no escuchando. Incluye:
+- Sesiones con casos prácticos del propio sector (automoción, hostelería, clínicas, etc.)
+- Herramientas concretas que el equipo puede usar desde el primer día
+- Ejercicios reales con los procesos del negocio del cliente
+- Seguimiento post-formación para resolver dudas de implementación
+- Material descargable y guías de referencia
+
+Duración habitual: talleres de 3 a 6 horas, adaptables al horario del equipo.
+
+---
+
+### Agentes IA y automatizaciones a medida
+URL: https://www.canariagentic.com/#servicios
+
+Diseño e implementación completa de sistemas de IA conversacional y automatización de flujos. Es el servicio de mayor impacto. Incluye:
+- Agente conversacional disponible 24/7 (WhatsApp, web, email)
+- Gestión automática de citas, consultas frecuentes y seguimiento de clientes
+- Automatización de flujos completos (captación → respuesta → agenda → seguimiento)
+- Integración con las herramientas actuales del negocio (sin migrar sistemas)
+- Prueba piloto en entorno real antes del despliegue completo
+- Formación del equipo para gestión autónoma del sistema
+- Soporte técnico post-implementación
+
+---
+
+## Sectores atendidos
+
+### Talleres y automoción
+URL: https://www.canariagentic.com/#sectores
+
+Problemas habituales: clientes que llaman fuera de horario y no reciben respuesta, gestión manual de citas, tiempo perdido respondiendo las mismas preguntas sobre precios y disponibilidad.
+
+Soluciones típicas:
+- Agente WhatsApp que atiende consultas 24/7 y agenda citas automáticamente
+- Resumen diario automático de citas y trabajos pendientes para el equipo
+- Seguimiento de clientes con recordatorios de revisiones periódicas
+- Respuesta inmediata a presupuestos básicos (cambio de aceite, ITV, neumáticos)
+
+---
+
+### Clínicas y centros de salud
+URL: https://www.canariagentic.com/#sectores
+
+Problemas habituales: recepción saturada, llamadas perdidas en horas punta, pacientes que abandonan la espera antes de ser atendidos.
+
+Soluciones típicas:
+- Asistente virtual para gestión de citas y confirmaciones
+- Respuesta simultánea a múltiples consultas sin colapsar recepción
+- Recordatorios automáticos de citas para reducir ausencias
+- Atención de consultas básicas fuera del horario de apertura
+
+---
+
+### Inmobiliarias
+URL: https://www.canariagentic.com/#sectores
+
+Problemas habituales: leads que llegan de noche o fines de semana sin recibir respuesta, oportunidades perdidas por no contactar al interesado en las primeras horas.
+
+Soluciones típicas:
+- Captación y cualificación automática de leads fuera de horario
+- Seguimiento programado hasta conseguir la reunión
+- Respuesta inmediata con información de propiedades disponibles
+- Alertas al agente cuando un lead muestra interés real
+
+---
+
+### Hoteles y alojamientos
+URL: https://www.canariagentic.com/#sectores
+
+Problemas habituales: consultas de disponibilidad y precio que llegan por múltiples canales y requieren respuesta rápida para no perder la reserva.
+
+Soluciones típicas:
+- Respuesta inmediata a consultas de reserva sin intervención humana
+- Gestión de peticiones especiales y check-in/check-out automatizado
+- Integración con sistemas de reservas existentes
+- Seguimiento post-estancia para reseñas y fidelización
+
+---
+
+### Restaurantes y hostelería
+URL: https://www.canariagentic.com/#sectores
+
+Problemas habituales: el equipo de sala no puede atender el teléfono durante el servicio, reservas que se pierden por no contestar a tiempo.
+
+Soluciones típicas:
+- Gestión de reservas por WhatsApp sin intervención humana
+- Respuesta a consultas de carta, alergenos y horarios
+- Confirmaciones y recordatorios automáticos
+- Lista de espera automatizada en momentos de alta demanda
+
+---
+
+### Academias y centros de formación
+URL: https://www.canariagentic.com/#sectores
+
+Problemas habituales: interesados que preguntan por cursos y no reciben respuesta rápida, acabando matriculándose en la competencia.
+
+Soluciones típicas:
+- Respuesta inmediata a consultas de programas, precios y fechas
+- Seguimiento automático hasta conseguir la matrícula
+- Recordatorios de fechas de inicio y pagos
+- Encuestas de satisfacción automáticas post-curso
+
+---
+
+### Comercio local
+URL: https://www.canariagentic.com/#sectores
+
+Problemas habituales: clientes potenciales que preguntan fuera del horario comercial y no reciben respuesta hasta el día siguiente, cuando ya compraron en otro sitio.
+
+Soluciones típicas:
+- Atención a clientes potenciales incluso con la tienda cerrada
+- Información de stock, precios y disponibilidad de forma automática
+- Gestión de pedidos y consultas por WhatsApp
+- Notificaciones de ofertas y novedades a clientes existentes
+
+---
+
+## Proceso de trabajo
+
+URL: https://www.canariagentic.com/#como-funciona
+
+El proceso tiene 5 pasos claramente definidos:
+
+1. **Análisis del negocio** — Sesión de diagnóstico para entender los procesos actuales, los cuellos de botella y los objetivos del negocio. Sin vender nada, solo escuchar y entender.
+
+2. **Detección de tareas repetitivas** — Identificación precisa de qué se puede automatizar, qué impacto tendría y en qué orden tiene sentido implementarlo según el retorno.
+
+3. **Diseño del agente o automatización** — Diseño personalizado del sistema: qué hace, cómo responde, con qué tono, qué decisiones puede tomar solo y cuándo escala a una persona.
+
+4. **Prueba en entorno real con el equipo** — Periodo de prueba con el equipo del cliente antes del despliegue completo. Se ajusta el comportamiento del agente según los casos reales que van apareciendo.
+
+5. **Formación para autonomía total** — El equipo aprende a gestionar, modificar y sacar partido del sistema sin depender de soporte externo para el día a día.
+
+---
+
+## Recursos gratuitos
+
+### Diagnóstico de automatización
+URL: https://www.canariagentic.com/#diagnostico
+
+Cuestionario de 6 preguntas que estima el potencial de automatización del negocio e identifica las áreas de mayor impacto inmediato. Al completarlo, el usuario recibe:
+- Porcentaje estimado de tareas automatizables en su negocio
+- Las 3 áreas donde la IA tendría mayor impacto inmediato
+- Recomendación del servicio más adecuado según su perfil
+
+---
+
+### Guía gratuita: "5 tareas que tu pyme está haciendo a mano y la IA puede hacer por ti"
+URL: https://www.canariagentic.com/#guia
+
+Escrita por Francisco de Jorge desde la experiencia real con negocios canarios. Incluye:
+- Ejemplos reales de automatizaciones implementadas en pymes de las islas
+- Estimaciones de tiempo ahorrado por tipo de negocio
+- Herramientas concretas recomendadas para cada tipo de tarea
+- Guía de primeros pasos para empezar sin conocimientos técnicos
+
+---
+
+## Contacto y agenda
+
+### Llamada de diagnóstico gratuita (30 minutos)
+URL: https://www.canariagentic.com/#agenda
+
+Llamada directa con Francisco de Jorge para:
+- Analizar el negocio del cliente sin filtros ni intermediarios
+- Identificar oportunidades reales de automatización
+- Recibir un plan de acción concreto
+- Sin compromiso de contratación
+
+Contacto directo:
+- Email: francisco@canariagentic.com
+- WhatsApp: +34 649 823 612
+- Web: https://www.canariagentic.com
+
+---
+
+## Redes sociales
+
+- Instagram: https://www.instagram.com/canariagentic/ — Contenido sobre IA aplicada a pymes canarias, casos de uso reales y novedades del sector.
+- Facebook: https://www.facebook.com/profile.php?id=61579694325128 — Actualizaciones del proyecto y contenido divulgativo sobre IA para negocios locales.
