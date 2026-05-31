@@ -1,0 +1,47 @@
+# CanarIAgentic
+
+> Consultoría de Inteligencia Artificial para pymes de las Islas Canarias, fundada por Francisco de Jorge. Ayuda a negocios locales a implementar sistemas de IA que captan clientes, responden consultas y automatizan procesos repetitivos, sin necesidad de contratar personal adicional ni tener conocimientos técnicos.
+
+Francisco de Jorge combina 25 años de experiencia gestionando negocios reales en Canarias con formación técnica avanzada en Inteligencia Artificial. Su enfoque es práctico y orientado a resultados concretos: no instala software y desaparece, sino que acompaña a cada empresa desde el diagnóstico hasta que el equipo es completamente autónomo.
+
+Notas importantes:
+
+- El servicio está enfocado exclusivamente en pymes de las Islas Canarias, España.
+- No se trata de consultoría teórica: todos los servicios parten del análisis real del negocio del cliente.
+- Los agentes IA se integran con las herramientas que el negocio ya usa (no requieren cambiar sistemas existentes).
+- Se ofrece una llamada de diagnóstico gratuita de 30 minutos sin compromiso.
+- Contacto directo: francisco@canariagentic.com | WhatsApp: +34 649 823 612
+
+## Servicios
+
+- [Diagnóstico IA para pymes](https://www.canariagentic.com/#servicios): Análisis profundo del negocio para identificar tareas automatizables y entregar un mapa de impacto con ROI estimado. Es el punto de partida ideal antes de cualquier implementación.
+- [Formación práctica en IA para equipos](https://www.canariagentic.com/#servicios): Talleres presenciales o en remoto con casos prácticos del propio sector del cliente. El objetivo es que el equipo aprenda haciendo, no escuchando, con seguimiento post-formación incluido.
+- [Agentes IA y automatizaciones a medida](https://www.canariagentic.com/#servicios): Diseño e implementación de agentes conversacionales 24/7, automatización de flujos completos e integración con las herramientas actuales del negocio. Es el servicio de mayor impacto.
+
+## Sectores atendidos
+
+- [Talleres y automoción](https://www.canariagentic.com/#sectores): Atención a consultas fuera de horario, agenda de citas automática y resumen diario para el equipo.
+- [Clínicas y centros de salud](https://www.canariagentic.com/#sectores): Soporte a recepción, gestión de citas y atención simultánea de múltiples consultas.
+- [Inmobiliarias](https://www.canariagentic.com/#sectores): Captación y seguimiento automatizado de leads que llegan fuera de horario.
+- [Hoteles y alojamientos](https://www.canariagentic.com/#sectores): Respuesta inmediata a consultas de reserva sin intervención humana.
+- [Restaurantes y hostelería](https://www.canariagentic.com/#sectores): Gestión de reservas y consultas para liberar tiempo en sala.
+- [Academias y formación](https://www.canariagentic.com/#sectores): Respuesta rápida a interesados para evitar que se vayan a la competencia.
+- [Comercio local](https://www.canariagentic.com/#sectores): Atención a clientes potenciales incluso cuando la tienda está cerrada.
+
+## Proceso de trabajo
+
+- [Cómo funciona](https://www.canariagentic.com/#como-funciona): El proceso tiene 5 pasos — (1) análisis del negocio, (2) detección de tareas repetitivas, (3) diseño del agente o automatización, (4) prueba en entorno real con el equipo, (5) formación para autonomía total.
+
+## Recursos gratuitos
+
+- [Diagnóstico de automatización](https://www.canariagentic.com/#diagnostico): Cuestionario de 6 preguntas que estima el potencial de automatización del negocio e identifica las áreas de mayor impacto inmediato.
+- [Guía gratuita](https://www.canariagentic.com/#guia): "5 tareas que tu pyme está haciendo a mano y la IA puede hacer por ti" — con ejemplos reales de negocios canarios, escrita por Francisco de Jorge desde la experiencia real.
+
+## Contacto y agenda
+
+- [Agenda una llamada gratuita](https://www.canariagentic.com/#agenda): Llamada de 30 minutos con Francisco de Jorge para analizar el negocio, identificar oportunidades reales y recibir un plan de acción, sin compromiso.
+
+## Optional
+
+- [Instagram de CanarIAgentic](https://www.instagram.com/canariagentic/): Contenido sobre IA aplicada a pymes canarias y casos de uso reales.
+- [Facebook de CanarIAgentic](https://www.facebook.com/profile.php?id=61579694325128): Presencia en redes sociales con actualizaciones del proyecto.
