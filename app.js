@@ -368,7 +368,6 @@ const popup = document.getElementById('social-proof-popup');
 const closePopup = document.getElementById('sp-close');
 
 if (popup && closePopup) {
-  // Lista de localidades objetivo en Canarias
   // Mensajes reales sobre CanarIAgentic (name/action/time sincronizados por índice)
   const locations = [
     "+25 años de experiencia empresarial", "Conforme al Reglamento de IA de la UE", "Diagnóstico gratuito y sin compromiso"
