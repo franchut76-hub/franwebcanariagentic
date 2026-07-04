@@ -979,3 +979,9 @@ footer{background:#070f1e;border-top:1px solid var(--border);padding:64px 0 32px
   .cookie-buttons .btn-sm { width: 100%; justify-content: center; }
   .cookie-link { text-align: center; }
 }
+
+
+/* Evitar solape entre WhatsApp y la barra CTA inferior */
+.wa-float:has(~ .sticky-bottom-cta.visible) {
+    bottom: 92px;
+}
