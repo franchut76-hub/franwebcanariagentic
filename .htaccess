@@ -10,3 +10,13 @@ RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # 3. Redirect /calendario a la sección de reserva
 RewriteRule ^calendario/?$ https://www.canariagentic.com/#contacto [NE,L,R=301]
+
+# 4. Cabeceras de seguridad HTTP
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api-d7b62b.stack.tryrelevance.com; frame-src https://calendar.google.com; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+</IfModule>
