@@ -363,38 +363,36 @@ if (stickyCta) {
 }
 
 
-// 4. SOCIAL PROOF (FOMO) POPUP
+// 4. TRUST BANNER (mensajes reales rotativos)
 const popup = document.getElementById('social-proof-popup');
 const closePopup = document.getElementById('sp-close');
 
 if (popup && closePopup) {
-  // Lista de localidades objetivo en Canarias
+  // Mensajes reales sobre CanarIAgentic (name/action/time sincronizados por índice)
   const locations = [
-    "Tenerife", "Gran Canaria", "Lanzarote", "Fuerteventura", 
-    "una Inmobiliaria en La Laguna", "una Clínica en Las Palmas", 
-    "un eCommerce en Arona", "un Despacho de Abogados en Santa Cruz"
+    "+25 años de experiencia empresarial", "Conforme al Reglamento de IA de la UE", "Diagnóstico gratuito y sin compromiso"
   ];
-  
+
   const actions = [
-    "acaba de solicitar su diagnóstico gratuito",
-    "está chateando por WhatsApp ahora mismo",
-    "acaba de agendar una llamada",
-    "está viendo los servicios de la agencia"
+    "Gestionando negocios reales en Canarias",
+    "Reglamento (UE) 2024/1689",
+    "Respuesta en 24-48h"
   ];
-  
-  const times = ["Hace 2 minutos", "Hace 5 minutos", "Hace 12 minutos", "Ahora mismo"];
+
+  const times = ["Sobre el fundador", "Cumplimiento normativo", "Cómo empezar"];
 
   closePopup.addEventListener('click', () => {
     popup.classList.remove('visible');
     // Si lo cierra, no molestamos más tan rápido
   });
 
-  // Función para mostrar popup aleatorio
+  // Función para mostrar un mensaje de confianza real
   function showRandomNotification() {
-    // Rellenamos datos aleatorios
-    document.getElementById('sp-name').textContent = "Alguien de " + locations[Math.floor(Math.random() * locations.length)];
-    document.getElementById('sp-action').textContent = actions[Math.floor(Math.random() * actions.length)];
-    document.getElementById('sp-time').textContent = times[Math.floor(Math.random() * times.length)];
+    // Elegimos un mensaje real (name/action/time van sincronizados por índice)
+    const trustIdx = Math.floor(Math.random() * locations.length);
+    document.getElementById('sp-name').textContent = locations[trustIdx];
+    document.getElementById('sp-action').textContent = actions[trustIdx];
+    document.getElementById('sp-time').textContent = times[trustIdx];
     
     // Mostramos
     popup.classList.remove('hidden');
@@ -409,7 +407,7 @@ if (popup && closePopup) {
     }, 6000);
   }
 
-  // Comienza ciclo de notificaciones
+  // Comienza ciclo de mensajes de confianza
   setTimeout(() => {
     showRandomNotification();
     // Y luego repetir cada X tiempo aleatorio (ej. 30-45 seg)
