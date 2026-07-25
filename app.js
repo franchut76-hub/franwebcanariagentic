@@ -423,8 +423,29 @@ if (popup && closePopup) {
 document.addEventListener('DOMContentLoaded', () => {
   const cookieConsent = document.getElementById('cookieConsent');
   const acceptCookiesBtn = document.getElementById('acceptCookies');
-  
-  if (cookieConsent && !localStorage.getItem('cookiesAccepted')) {
+  const rejectCookiesBtn = document.getElementById('rejectCookies');
+  const calendarWrapper = document.getElementById('calendarWrapper');
+  const loadCalendarBtn = document.getElementById('loadCalendarBtn');
+
+  function loadCalendarIframe() {
+    if (!calendarWrapper || calendarWrapper.dataset.loaded === 'true') return;
+    const src = calendarWrapper.getAttribute('data-calendar-src');
+    calendarWrapper.innerHTML = `<iframe src="${src}" style="border: 0; background: #ffffff;" width="100%" height="100%" frameborder="0"></iframe>`;
+    calendarWrapper.dataset.loaded = 'true';
+  }
+
+  function hideBanner() {
+    cookieConsent.classList.remove('show');
+    setTimeout(() => cookieConsent.classList.add('hidden'), 600);
+  }
+
+  const consent = localStorage.getItem('cookiesAccepted'); // 'true' | 'false' | null
+
+  if (consent === 'true') {
+    loadCalendarIframe();
+  }
+
+  if (cookieConsent && !consent) {
     setTimeout(() => {
       cookieConsent.classList.remove('hidden');
       // force reflow
@@ -436,8 +457,23 @@ document.addEventListener('DOMContentLoaded', () => {
   if (acceptCookiesBtn) {
     acceptCookiesBtn.addEventListener('click', () => {
       localStorage.setItem('cookiesAccepted', 'true');
-      cookieConsent.classList.remove('show');
-      setTimeout(() => cookieConsent.classList.add('hidden'), 600);
+      loadCalendarIframe();
+      hideBanner();
+    });
+  }
+
+  if (rejectCookiesBtn) {
+    rejectCookiesBtn.addEventListener('click', () => {
+      localStorage.setItem('cookiesAccepted', 'false');
+      hideBanner();
+    });
+  }
+
+  if (loadCalendarBtn) {
+    loadCalendarBtn.addEventListener('click', () => {
+      localStorage.setItem('cookiesAccepted', 'true');
+      loadCalendarIframe();
+      if (cookieConsent && cookieConsent.classList.contains('show')) hideBanner();
     });
   }
   
